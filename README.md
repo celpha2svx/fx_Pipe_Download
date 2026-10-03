@@ -135,7 +135,7 @@ The single entry point for ML models. Abstracts storage details behind a clean A
 ### Step 1: Clone & Install
 
 ```python
-!git clone https://github.com/YOUR_USERNAME/fxpipe.git
+!git clone https://github.com/celpha2svx/fx_Pipe_Download.git
 %cd fxpipe
 !pip install .
 ```
