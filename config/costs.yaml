@@ -1,0 +1,12 @@
+# Transaction Costs — The ONLY modification to the frozen strategy
+
+spread:
+  EURUSD: 1.5
+  GBPUSD: 1.5
+  USDJPY: 1.5
+  AUDUSD: 1.5
+
+slippage:
+  stop_loss: 1.0
+  take_profit: 0.5
+  time_stop: 1.0

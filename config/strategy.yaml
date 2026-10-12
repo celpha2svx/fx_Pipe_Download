@@ -1,0 +1,39 @@
+# VRMR Strategy — Frozen Baseline (Phase 1)
+# DO NOT MODIFY. This is the reference point.
+
+zscore:
+  lookback: 20
+  entry_threshold: 2.0
+  exit_threshold: 0.0
+
+realized_volatility:
+  current_lookback: 20
+  average_lookback: 100
+  # Filter: only enter when current RV < average RV
+
+volume_filter:
+  enabled: true
+  multiplier: 1.5
+  lookback: 20
+
+atr:
+  period: 14
+  stop_loss_multiplier: 1.5
+  # No ATR-based take-profit. TP = Z-score exit.
+
+stop_loss:
+  type: "fixed_atr"
+  multiplier: 1.5
+  trailing: false
+
+take_profit:
+  type: "zscore_exit"
+  threshold: 0.0
+
+time_stop:
+  enabled: true
+  max_bars: 10
+
+position_sizing:
+  method: "fixed_fractional"
+  risk_per_trade: 0.01
