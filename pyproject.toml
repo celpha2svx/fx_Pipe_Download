@@ -9,8 +9,10 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "dukascopy-python>=4.0.1",
+    "numpy>=2.5.3",
     "pandas>=3.0.6",
     "pyarrow>=25.0.1",
+    "pyyaml>=6.0.3",
 ]
 
 [project.scripts]
