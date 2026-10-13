@@ -103,9 +103,11 @@ class VRMRStrategy:
                 min_periods=self.volume_lookback
             ).mean()
 
+            out["volume_avg"] = volume_avg  
             out["volume_filter"] = out["volume"] > (self.volume_multiplier * volume_avg)
         else:
             out["volume_filter"] = True
+            out["volume_avg"] = 0 
 
         # Fill NaN booleans as False
         out["rv_filter"] = out["rv_filter"].fillna(False)
