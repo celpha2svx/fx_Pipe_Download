@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "dukascopy-python>=4.0.1",
+    "numba>=0.68.0",
     "numpy>=2.5.3",
     "pandas>=3.0.6",
     "pyarrow>=25.0.1",

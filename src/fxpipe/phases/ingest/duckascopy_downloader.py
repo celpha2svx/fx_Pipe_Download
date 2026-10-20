@@ -32,7 +32,8 @@ class IngestionPhase:
         interval_map = {
             "M1": dukascopy_python.INTERVAL_MIN_1,
             "H1": dukascopy_python.INTERVAL_HOUR_1,
-            "H4": dukascopy_python.INTERVAL_HOUR_4
+            "H4": dukascopy_python.INTERVAL_HOUR_4,
+            "D1": dukascopy_python.INTERVAL_DAY_1,
         }
 
         instrument = instrument_map.get(pair)
